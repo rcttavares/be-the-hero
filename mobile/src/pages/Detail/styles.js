@@ -14,12 +14,15 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
 
+  content: {
+    marginTop: 48,
+  },
+
   incident: {
     padding: 24,
     borderRadius: 8,
     backgroundColor: '#FFF',
     marginBottom: 16,
-    marginTop: 48,
   },
 
   incidentProperty: {
@@ -27,6 +30,7 @@ export default StyleSheet.create({
     color: '#41414d',
     fontWeight: 'bold',
     marginTop: 24,
+    textTransform: 'uppercase',
   },
 
   incidentValue: {
@@ -35,7 +39,7 @@ export default StyleSheet.create({
     color: '#737380',
   },
 
-  contactBox: {
+  contact: {
     padding: 24,
     borderRadius: 8,
     backgroundColor: '#FFF',

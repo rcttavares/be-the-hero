@@ -52,6 +52,7 @@ export default StyleSheet.create({
     fontSize: 14,
     color: '#41414d',
     fontWeight: 'bold',
+    textTransform: 'uppercase',
   },
 
   incidentValue: {
