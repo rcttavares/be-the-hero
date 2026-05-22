@@ -1150,6 +1150,16 @@
     use-latest-callback "^0.2.4"
     use-sync-external-store "^1.5.0"
 
+"@react-navigation/native-stack@^7.8.6":
+  version "7.15.1"
+  resolved "https://registry.yarnpkg.com/@react-navigation/native-stack/-/native-stack-7.15.1.tgz#799120d366dcd6d5d574f65148dec752ca40ab42"
+  integrity sha512-kNrJggwoB/onC0MpZIuZ6qaqeAziFchz+W9txBzhd6qbWmB1OkPVUnu6fWgc6BQc7MeMf59djVmqgX+6kJU1Ug==
+  dependencies:
+    "@react-navigation/elements" "^2.9.18"
+    color "^4.2.3"
+    sf-symbols-typescript "^2.1.0"
+    warn-once "^0.1.1"
+
 "@react-navigation/native@^7.2.4":
   version "7.2.4"
   resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-7.2.4.tgz#3e44077d2ae1b7a6ba8e376b49e1fce6272dbec1"
@@ -1167,15 +1177,6 @@
   integrity sha512-9/hhMte12Kgu+pMnLfA4EWJ0OQmIEAMVMX06FPH2yGkEQSQ3JhhCN/GkcRikzQhtEi97VYYQA15umptBUShcOQ==
   dependencies:
     nanoid "^3.3.11"
-
-"@react-navigation/stack@^7.9.2":
-  version "7.9.2"
-  resolved "https://registry.yarnpkg.com/@react-navigation/stack/-/stack-7.9.2.tgz#d04bfce909d937a665e8265def986f3af4dd7d95"
-  integrity sha512-zrUpd1TMUa8X2WqEmrBo2tW7EYmPD/vUXchXF2SSM7pnKQILPbhaB6+724ANnBIyMKBgskxaAly7oX+I16X7ww==
-  dependencies:
-    "@react-navigation/elements" "^2.9.18"
-    color "^4.2.3"
-    use-latest-callback "^0.2.4"
 
 "@sinclair/typebox@^0.27.8":
   version "0.27.10"
@@ -3485,6 +3486,11 @@ setprototypeof@~1.2.0:
   resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.2.0.tgz#66c9a24a73f9fc28cbe66b09fed3d33dcaf1b424"
   integrity sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==
 
+sf-symbols-typescript@^2.1.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/sf-symbols-typescript/-/sf-symbols-typescript-2.2.0.tgz#926d6e0715e3d8784cadf7658431e36581254208"
+  integrity sha512-TPbeg0b7ylrswdGCji8FRGFAKuqbpQlLbL8SOle3j1iHSs5Ob5mhvMAxWN2UItOjgALAB5Zp3fmMfj8mbWvXKw==
+
 shebang-command@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-2.0.0.tgz#ccd0af4f8835fbdc265b82461aaf0c36663f34ea"
@@ -3843,6 +3849,11 @@ warn-once@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/warn-once/-/warn-once-0.1.0.tgz#4f58d89b84f968d0389176aa99e0cf0f14ffd4c8"
   integrity sha512-recZTSvuaH/On5ZU5ywq66y99lImWqzP93+AiUo9LUwG8gXHW+LJjhOd6REJHm7qb0niYqrEQJvbHSQfuJtTqA==
+
+warn-once@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/warn-once/-/warn-once-0.1.1.tgz#952088f4fb56896e73fd4e6a3767272a3fccce43"
+  integrity sha512-VkQZJbO8zVImzYFteBXvBOZEl1qL175WH8VmZcxF2fZAoudNhNDvHi+doCaAEdU2l2vtcIwa2zn0QK5+I1HQ3Q==
 
 wcwidth@^1.0.1:
   version "1.0.1"
