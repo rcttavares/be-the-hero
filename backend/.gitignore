@@ -3,3 +3,6 @@
 
 # testing
 /coverage
+
+# database
+src/database/*.sqlite
