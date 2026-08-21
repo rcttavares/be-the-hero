@@ -96,9 +96,12 @@ cd backend
 yarn audit
 yarn test
 
+cd ../frontend
+yarn audit
+
 cd ../mobile
 yarn audit
 npx expo-doctor
 ```
 
-Backend and mobile dependencies were updated to clear known audit vulnerabilities.
+Backend, frontend, and mobile dependencies were updated to clear known audit vulnerabilities.
