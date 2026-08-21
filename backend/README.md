@@ -21,16 +21,10 @@ Run the SQLite database migrations:
 npx knex migrate:latest
 ```
 
-Start the API in development:
+Start the API in development (available at `http://localhost:3333`):
 
 ```bash
 yarn start
-```
-
-The API is available at:
-
-```text
-http://localhost:3333
 ```
 
 Run the tests:
@@ -88,5 +82,4 @@ Authorization: <ong_id>
 
 ## Notes
 
-The frontend and mobile apps expect this API to run on port `3333`.
 If the mobile app times out on HTTP requests, confirm that the backend is running on the same machine serving Expo.
