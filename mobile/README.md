@@ -7,7 +7,7 @@ Expo/React Native Be The Hero app for browsing published cases and contacting NG
 - Node.js 22 or newer.
 - Yarn 1.x.
 - Expo Go installed on a physical device, or a configured iOS/Android simulator.
-- Backend running at `http://localhost:3333` on the machine serving Expo.
+- Backend running (see the API section below for host/port details).
 
 ## Commands
 
@@ -90,8 +90,7 @@ npx expo export --platform web --clear
 - Expo SDK 56
 - React 19
 - React Native 0.85
-- React Navigation 7
-- Native Stack
+- React Navigation 7 (Native Stack)
 - Axios 1
 - Expo Mail Composer
 - Expo Splash Screen
