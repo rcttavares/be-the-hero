@@ -4,6 +4,7 @@ const IncidentController = require('./controllers/IncidentController');
 const OngController = require('./controllers/OngController');
 const ProfileController = require('./controllers/ProfileController');
 const SessionController = require('./controllers/SessionController');
+const { sessionsLimiter } = require('./middlewares/rateLimiter');
 
 const routes = express.Router();
 
@@ -67,6 +68,7 @@ routes.get(
 
 routes.post(
   '/sessions',
+  sessionsLimiter,
   celebrate({
     [Segments.BODY]: Joi.object().keys({
       id: Joi.string().required().id(),
