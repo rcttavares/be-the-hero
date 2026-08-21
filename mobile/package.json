@@ -36,7 +36,8 @@
     "js-yaml": "^4.3.1",
     "form-data": "^4.0.6",
     "@babel/core": "^7.29.6",
-    "nanoid": "^3.3.17"
+    "nanoid": "^3.3.18",
+    "image-size": "file:./vendor/image-size"
   },
   "private": true
 }
