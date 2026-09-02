@@ -32,6 +32,8 @@
     "tar": "^7.5.20",
     "form-data": "^4.0.6",
     "@babel/core": "^7.29.6",
-    "minimatch@^3.0.4/brace-expansion": "^1.1.18"
+    "minimatch@^3.0.4/brace-expansion": "^1.1.18",
+    "browserslist": "^4.28.7",
+    "qs": "^6.16.0"
   }
 }
