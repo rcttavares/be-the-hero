@@ -24,4 +24,20 @@ describe('ong', () => {
     expect(response.body).toHaveProperty('id');
     expect(response.body.id).toHaveLength(8);
   });
+
+  it('should be able to list ONGs', async () => {
+    const ong = {
+      name: 'Rafael Tavares',
+      email: 'rafael.tawares@gmail.com',
+      whatsapp: '31999201965',
+      city: 'Belo Horizonte',
+      uf: 'MG',
+    };
+    const { body: created } = await request(app).post('/ongs').send(ong);
+
+    const response = await request(app).get('/ongs');
+
+    expect(response.status).toBe(200);
+    expect(response.body).toEqual([{ id: created.id, ...ong }]);
+  });
 });
