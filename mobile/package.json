@@ -53,7 +53,8 @@
     "metro-source-map": "0.84.5",
     "metro-symbolicate": "0.84.5",
     "metro-transform-plugins": "0.84.5",
-    "metro-transform-worker": "0.84.5"
+    "metro-transform-worker": "0.84.5",
+    "zod": "^4.6.6"
   },
   "private": true
 }
