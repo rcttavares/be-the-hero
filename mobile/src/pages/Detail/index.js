@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Image,
   Linking,
@@ -33,7 +32,7 @@ export default function Detail() {
 
   function sendWhatsapp() {
     Linking.openURL(
-      `https://api.whatsapp.com/send?phone=${incident.whatsapp}&text=${message}`
+      `https://api.whatsapp.com/send?phone=${incident.whatsapp}&text=${message}`,
     );
   }
 
@@ -51,7 +50,7 @@ export default function Detail() {
         <Image source={logoImg} />
 
         <TouchableOpacity onPress={navigateBack}>
-          <Feather name='arrow-left' size={28} color='#E82041' />
+          <Feather name="arrow-left" size={28} color="#E82041" />
         </TouchableOpacity>
       </View>
 

@@ -2,7 +2,7 @@ const generateUniqueId = require('../utils/generateUniqueId');
 const connection = require('../database/connection');
 
 module.exports = {
-  async index(request, response) {
+  async index(_request, response) {
     const ongs = await connection('ongs').select('*');
 
     return response.json(ongs);

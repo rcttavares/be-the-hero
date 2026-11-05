@@ -32,7 +32,7 @@ export default function Register() {
       alert(`Seu ID de login: ${response.data.id}`);
 
       history.push("/");
-    } catch (err) {
+    } catch (_err) {
       alert("Erro ao cadastrar novo registro, tente novamente.");
     }
   }
@@ -44,7 +44,7 @@ export default function Register() {
           <img src={logoImg} alt="Be The Hero" />
 
           <h1>Cadastro</h1>
-          
+
           <p>
             Faça seu cadastro, entre na plataforma e ajude pessoas a encontrarem
             os casos da sua ONG.

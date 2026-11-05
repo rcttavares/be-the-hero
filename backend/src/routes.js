@@ -15,7 +15,7 @@ routes.get(
       page: Joi.number().required(),
     }),
   }),
-  IncidentController.index
+  IncidentController.index,
 );
 
 routes.post(
@@ -27,7 +27,7 @@ routes.post(
       value: Joi.number().required(),
     }),
   }),
-  IncidentController.create
+  IncidentController.create,
 );
 
 routes.delete(
@@ -37,7 +37,7 @@ routes.delete(
       id: Joi.number().required().id(),
     }),
   }),
-  IncidentController.delete
+  IncidentController.delete,
 );
 
 routes.get('/ongs', OngController.index);
@@ -53,7 +53,7 @@ routes.post(
       uf: Joi.string().required().length(2),
     }),
   }),
-  OngController.create
+  OngController.create,
 );
 
 routes.get(
@@ -63,7 +63,7 @@ routes.get(
       authorization: Joi.string().required(),
     }).unknown(),
   }),
-  ProfileController.index
+  ProfileController.index,
 );
 
 routes.post(
@@ -74,7 +74,7 @@ routes.post(
       id: Joi.string().required().id(),
     }),
   }),
-  SessionController.create
+  SessionController.create,
 );
 
 module.exports = routes;

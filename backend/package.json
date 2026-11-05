@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node --watch src/server.js",
-    "test": "cross-env NODE_ENV=test jest"
+    "test": "cross-env NODE_ENV=test jest",
+    "lint": "biome check .",
+    "format": "biome check --write ."
   },
   "keywords": [],
   "author": "",
@@ -17,11 +19,11 @@
     "express": "^5.2.1",
     "express-rate-limit": "^8.6.2",
     "knex": "^3.2.10",
-    "minimatch": "^3.0.4",
     "sqlite3": "^6.0.1"
   },
   "devDependencies": {
-    "jest": "^30.4.2",
+    "@biomejs/biome": "2.6.5",
+    "jest": "^30.5.2",
     "supertest": "^7.2.2"
   },
   "resolutions": {
@@ -32,9 +34,10 @@
     "tar": "^7.5.20",
     "form-data": "^4.0.6",
     "@babel/core": "^7.29.6",
-    "minimatch/brace-expansion": "1.1.21",
     "browserslist": "^4.28.7",
-    "qs": "^6.16.0",
-    "**/glob/minimatch/brace-expansion": "^2.1.7"
+    "qs": "^6.16.1",
+    "joi": "^17.13.9",
+    "**/glob": "^14.0.2",
+    "**/test-exclude/minimatch": "^11.0.1"
   }
 }

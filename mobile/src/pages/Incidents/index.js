@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FlatList, Image, Text, TouchableOpacity, View } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
@@ -37,6 +37,7 @@ export default function Incidents() {
     setLoading(false);
   }
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: load the first page only on mount
   useEffect(() => {
     getIncidents();
   }, []);
@@ -83,7 +84,7 @@ export default function Incidents() {
               onPress={() => navigateToDetail(incident)}
             >
               <Text style={styles.detailsButtonText}>Ver mais detalhes</Text>
-              <Feather name='arrow-right' size={16} color='#E02041' />
+              <Feather name="arrow-right" size={16} color="#E02041" />
             </TouchableOpacity>
           </View>
         )}
