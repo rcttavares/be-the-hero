@@ -17,7 +17,7 @@
     "express": "^5.2.1",
     "express-rate-limit": "^8.6.2",
     "knex": "^3.2.10",
-    "minimatch": "^3.0.4",
+    "minimatch": "^4.2.5",
     "sqlite3": "^6.0.1"
   },
   "devDependencies": {
@@ -34,7 +34,7 @@
     "@babel/core": "^7.29.6",
     "minimatch/brace-expansion": "1.1.21",
     "browserslist": "^4.28.7",
-    "qs": "^6.16.0",
+    "qs": "^6.17.1",
     "**/glob/minimatch/brace-expansion": "^2.1.7"
   }
 }
