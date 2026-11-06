@@ -76,9 +76,8 @@ Authorization: <ong_id>
 - Celebrate 15
 - Knex 3
 - SQLite3 6
-- Jest 30
+- Vitest 5
 - Supertest 7
-- Nodemon 3
 
 ## Notes
 
