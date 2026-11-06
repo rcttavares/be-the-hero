@@ -28,7 +28,7 @@ The API runs at `http://localhost:3333`.
 Main scripts:
 
 - `yarn start`: starts the API in watch mode (`node --watch`).
-- `yarn test`: runs the Jest test suite.
+- `yarn test`: runs the Vitest test suite.
 - `npx knex migrate:latest`: applies the SQLite development migrations.
 - `npx knex migrate:rollback`: rolls back the latest migration.
 
@@ -37,7 +37,7 @@ Current main versions:
 - Express 5
 - Knex 3
 - SQLite3 6
-- Jest 30
+- Vitest 5
 
 ## Frontend
 
