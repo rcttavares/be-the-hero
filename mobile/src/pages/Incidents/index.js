@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { FlatList, Image, Text, TouchableOpacity, View } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import logoImg from '../../assets/logo.png';
 import api from '../../services/api';
 import styles from './styles';
@@ -13,6 +14,7 @@ export default function Incidents() {
   const [loading, setLoading] = useState(false);
 
   const navigation = useNavigation();
+  const insets = useSafeAreaInsets();
 
   function navigateToDetail(incident) {
     navigation.navigate('Detail', { incident });
@@ -43,7 +45,7 @@ export default function Incidents() {
   }, []);
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { paddingTop: insets.top + 20 }]}>
       <View style={styles.header}>
         <Image source={logoImg} />
         <Text style={styles.headerText}>

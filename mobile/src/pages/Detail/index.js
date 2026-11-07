@@ -8,12 +8,14 @@ import {
 } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { useNavigation, useRoute } from '@react-navigation/native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import * as MailComposer from 'expo-mail-composer';
 import logoImg from '../../assets/logo.png';
 import styles from './styles';
 
 export default function Detail() {
   const navigation = useNavigation();
+  const insets = useSafeAreaInsets();
   const route = useRoute();
 
   const incident = route.params.incident;
@@ -45,7 +47,7 @@ export default function Detail() {
   }
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { paddingTop: insets.top + 20 }]}>
       <View style={styles.header}>
         <Image source={logoImg} />
 
