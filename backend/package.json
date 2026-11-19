@@ -6,14 +6,13 @@
   "scripts": {
     "start": "node --watch src/server.js",
     "test": "cross-env NODE_ENV=test vitest run",
-    "lint": "biome check .",
-    "format": "biome check --write ."
+    "check": "biome check --write ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "celebrate": "^15.0.3",
+    "celebrate": "^16.0.0",
     "cors": "^2.8.6",
     "cross-env": "^10.1.0",
     "express": "^5.2.1",
@@ -26,13 +25,5 @@
     "supertest": "^7.2.2",
     "vite": "^8",
     "vitest": "^5.1.0"
-  },
-  "resolutions": {
-    "lodash": "^4.18.1",
-    "semver": "^7.8.1",
-    "tar": "^7.5.20",
-    "form-data": "^4.0.6",
-    "qs": "^6.16.1",
-    "joi": "^17.13.9"
   }
 }
