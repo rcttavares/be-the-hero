@@ -18,19 +18,11 @@
     "esbuild": "^0.28.1",
     "vite": "^6.4.5"
   },
-  "resolutions": {
-    "form-data": "^4.0.6",
-    "@babel/core": "^7.29.6",
-    "nanoid": "^3.3.18",
-    "decode-uri-component": "^0.5.1",
-    "browserslist": "^4.28.7"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "biome check .",
-    "format": "biome check --write ."
+    "check": "biome check --write ."
   },
   "browserslist": {
     "production": [
